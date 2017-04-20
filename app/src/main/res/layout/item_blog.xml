@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+
+                android:id="@+id/rl_1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+
+                        android:src="@drawable/vmx_blog"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:text="We recently dropped the latest VMAX SDK. While we have already talked about all the great features and enhancements it brings to you, we are drilling down deeper into the security enhancements that come along with it. With the new SDK update, we have put a few anti-fraud measures in place, which ensure that only those apps which are linked to VMAX on the Control Panel and have integrated the VMAX SDK, will be served ads. The new SDK update also makes app permissions simpler for you."
+                        android:layout_margin="3dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/initial_font_gotham"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:text="Tuesday March 21st, 2017 | Blog, Product"
+                        android:layout_margin="3dp"
+                        android:textSize="8dp"
+                        android:textColor="@color/blog_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:textStyle="italic"
+                        android:text="by VMAX"
+                        android:layout_margin="3dp"
+                        android:textSize="16px"
+                        android:textColor="@color/blog_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+<View
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="75dp"
+    android:layout_marginRight="5dp"
+    android:background="@color/blog_descp"
+    android:layout_width="match_parent"
+    android:layout_height="0.6dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_2"
+                android:layout_below="@id/rl_1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/img1"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+
+                        android:src="@drawable/vmax_blog2"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:text="Our latest update to the VMAX SDK is aimed at multiple things. While it brings many new features, it also includes a lot of enhancements that you asked for. Many of them are aimed at giving you greater control over your app monetization. This means that you now get a more accurate understanding of your app monetization than before, arming you with all the right insights required make tweaks and changes that result in more ad revenue for you"
+                        android:layout_margin="3dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/initial_font_gotham"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:text="Wednesday March 1st, 2017 | Blog, Product"
+                        android:layout_margin="3dp"
+                        android:textSize="8dp"
+                        android:textColor="@color/blog_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:textStyle="italic"
+                        android:text="by VMAX"
+                        android:layout_margin="3dp"
+                        android:textSize="16px"
+                        android:textColor="@color/blog_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+<!--****************************************************************************************************************-->
+            <!--Ad Container-->
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:id="@+id/frame_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--XML load Container-->
+                <com.vmax.android.ads.api.VmaxAdView
+                    android:id="@+id/billboard_adview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    app:vmax_UX_type="0"
+                    app:vmax_adspot_id="2b3f2a39" />
+            </LinearLayout>
+            <!--Ad Container-->
+
+<!--****************************************************************************************************************-->
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_3"
+                android:layout_below="@id/rl_2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/img3"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+
+                        android:src="@drawable/vmax_blog3"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:text="Ants are one of the most amazing creatures we’ve ever come across. What makes them so interesting is the ability to lift 10 times their weight and move forward effortlessly. They also have a huge role to play in the earth’s natural ecosystem where they enrich the soil, pollinate flowers and spread seeds thus helping maintain the ecological balance"
+                        android:layout_margin="3dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/initial_font_gotham"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:text="Wednesday Feb 22nd, 2017 | Blog, Product"
+                        android:layout_margin="3dp"
+                        android:textSize="8dp"
+                        android:textColor="@color/blog_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:textStyle="italic"
+                        android:text="by VMAX"
+                        android:layout_margin="3dp"
+                        android:textSize="16px"
+                        android:textColor="@color/blog_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/blog_descp"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_4"
+                android:layout_below="@id/rl_3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/img4"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+
+                        android:src="@drawable/vmax_blog4"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:text="There’s something bigger that we are bringing with the new VMAX 3.6 SDK update. Although we’ve made significant enhancements to the SDK itself, we are delighted to introduce an all new ad type to you – Rewarded Interstitials ads. Rewarded video ads have been working wonders for you and interstitial ads are traditionally known to deliver great results. Publishers and users love them alike"
+                        android:layout_margin="3dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/initial_font_gotham"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:text="Tuesday Feb 14th, 2017 | Blog, Product"
+                        android:layout_margin="3dp"
+                        android:textSize="8dp"
+                        android:textColor="@color/blog_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:textStyle="italic"
+                        android:text="by VMAX"
+                        android:layout_margin="3dp"
+                        android:textSize="16px"
+                        android:textColor="@color/blog_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/blog_descp"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_5"
+                android:layout_below="@id/rl_4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/img5"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+
+                        android:src="@drawable/vmax_blog5"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/img5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:text="Companies have always relied on preliminary market research before embarking on a new product development or introducing a new service. At the very least, it gives them a good understanding of the opportunities, the gaps that their product or service can fill, and what it would take for them to achieve success
+"
+                        android:layout_margin="3dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/initial_font_gotham"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:text="Tuesday Feb 14th, 2017 | Blog, Product"
+                        android:layout_margin="3dp"
+                        android:textSize="8dp"
+                        android:textColor="@color/blog_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:textStyle="italic"
+                        android:text="by VMAX"
+                        android:layout_margin="3dp"
+                        android:textSize="16px"
+                        android:textColor="@color/blog_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/blog_descp"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_6"
+                android:layout_below="@id/rl_5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/img6"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+
+                        android:src="@drawable/vmax_blog6"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/img6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:text="One of the most popular of apps, worldwide, are photo and video editing apps. While apps such as Instagram made ‘filters’ trendy for images, today the likes of Snapchat are redefining how people create and share videos. In fact, according to an App Annie report, Photography as a category was second only to Tools in Google Play Store in Thailand in 2015 and grew at a rate of 25% year on year"
+                        android:layout_margin="3dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/initial_font_gotham"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:text="Tuesday Jan 5th, 2017 | Blog, Product"
+                        android:layout_margin="3dp"
+                        android:textSize="8dp"
+                        android:textColor="@color/blog_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:textStyle="italic"
+                        android:text="by VMAX"
+                        android:layout_margin="3dp"
+                        android:textSize="16px"
+                        android:textColor="@color/blog_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/blog_descp"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_7"
+                android:layout_below="@id/rl_6"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/img7"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+
+                        android:src="@drawable/vmax_blog7"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/img7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:text="Prashant Dixit - VP and Business Head, VMAX A good user experience is critical to the success of an app. Users will steer away from an app or simply uninstall if they find that it is not intuitive or user friendly. A few experts have already touched upon the various aspects of an app’s lifecycle, such as good app design, user experience and localization. What I would like to throw light upon now is how a mobile ad experience can affect your user experience"
+                        android:layout_margin="3dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/initial_font_gotham"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:text="Wednesday Dec 5th, 2017 | Blog, Product"
+                        android:layout_margin="3dp"
+                        android:textSize="8dp"
+                        android:textColor="@color/blog_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:textStyle="italic"
+                        android:text="by VMAX"
+                        android:layout_margin="3dp"
+                        android:textSize="16px"
+                        android:textColor="@color/blog_descp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
