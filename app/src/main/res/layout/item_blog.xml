@@ -4,10 +4,9 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
+    android:layout_margin="10dp"
     android:paddingBottom="5dp"
-    android:paddingLeft="5dp"
-    android:paddingRight="5dp"
+
 
     >
 
@@ -155,8 +154,9 @@
 <!--****************************************************************************************************************-->
             <!--Ad Container-->
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_margin="10dp"
+                android:layout_below="@id/rl_2"
                 android:gravity="center"
                 android:id="@+id/frame_xml"
                 android:layout_width="match_parent"
@@ -168,9 +168,9 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
 
-                    app:vmax_UX_type="0"
+                    app:vmax_UX_type="5"
                     app:vmax_adspot_id="2b3f2a39" />
-            </LinearLayout>
+            </RelativeLayout>
             <!--Ad Container-->
 
 <!--****************************************************************************************************************-->
@@ -179,7 +179,7 @@
 
             <RelativeLayout
                 android:id="@+id/rl_3"
-                android:layout_below="@id/rl_2"
+                android:layout_below="@id/frame_xml"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">

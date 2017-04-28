@@ -4,7 +4,12 @@ package com.vmax.demo.billboard;
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+
 import com.vmax.android.ads.api.VmaxAdView;
+import com.vmax.android.ads.common.VmaxAdListener;
+import com.vmax.android.ads.exception.VmaxAdError;
 
 
 /**Its Recommended To Use VMAX plugin For Android Studio To Add Your Dependencies
@@ -33,13 +38,13 @@ public class MainActivity extends AppCompatActivity {
 
         /** To Fetch Your AdvId you can check your device's Google settings under ads subMenu Or You can Run this app Once and check
          * the logs for 'AdRequested with url' under the tag vmax, from the url your Advid
-         * would be one of the parameters in the post request eg. advid=2cf626f0-08ac-4a4d-933c-00ecd0256cf4*/
+         * would be one of the parameters in the post request eg. advid=2cf626f0-08ac-4a4d-933c-00ecd0256cf4  */
 
      /** DON'T INCLUDE vmaxAdView.setTestDevices() WHILE GOING LIVE WITH YOUR PROJECT AS THIS SERVES ONLY TEST ADS;*/
         vmaxAdView.setTestDevices(VmaxAdView.TEST_via_ADVID,"<REPLACE WITH YOUR ADVID>");
 
-        vmaxAdView.loadAd();
 
+        vmaxAdView.loadAd();
 
     }
 
