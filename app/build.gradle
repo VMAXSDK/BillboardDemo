@@ -4,6 +4,7 @@ android {
     compileSdkVersion 24
     buildToolsVersion "25.0.2"
     defaultConfig {
+
         applicationId "com.vmax.demo.billboard"
         minSdkVersion 15
         targetSdkVersion 24
@@ -33,6 +34,6 @@ dependencies {
     compile(name:'AudienceNetwork', ext:'aar')
 /* Adding Mediation Partner Ad-Mob*/
     compile 'com.google.android.gms:play-services-ads:9.6.0'
-
     testCompile 'junit:junit:4.12'
 }
+

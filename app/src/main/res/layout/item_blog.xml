@@ -155,21 +155,23 @@
             <!--Ad Container-->
 
             <RelativeLayout
-                android:layout_margin="10dp"
-                android:layout_below="@id/rl_2"
                 android:gravity="center"
                 android:id="@+id/frame_xml"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <!--XML load Container-->
                 <com.vmax.android.ads.api.VmaxAdView
-                    android:id="@+id/billboard_adview"
+                    xmlns:vmax="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/xml_container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
                     android:gravity="center"
+                    vmax:adspotKey="2b3f2a39"
+                    vmax:uxType="@integer/vmax_ux_billboard"
 
-                    app:vmax_UX_type="5"
-                    app:vmax_adspot_id="2b3f2a39" />
+                    />
             </RelativeLayout>
             <!--Ad Container-->
 
